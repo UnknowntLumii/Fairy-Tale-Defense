@@ -385,9 +385,7 @@ while running:
             screen.blit(scaled_heart, (x_pos, 10))
         
         if pygame.time.get_ticks() - boss_warning_timer < 3000:
-            # I made it Red so it looks like a real boss warning!
             warning_text = large_font.render("WARNING: DRAGON APPROACHING!", True, (255, 50, 50))
-            # Put it right in the middle of the screen
             screen.blit(warning_text, (WIDTH//2 - warning_text.get_width()//2, HEIGHT//2 - 150))
             
     else:
